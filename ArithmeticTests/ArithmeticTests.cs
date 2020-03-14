@@ -26,7 +26,7 @@ namespace BasicArithmeticTests
             }
             catch
             {
-                Console.WriteLine("Did you add the firstNumber and secondNumber and assign it to the result variable in AddTwoNumbers? Make sure that you didn't subtract, multiply, or divide in the AddTwoNumbers function.");
+                throw new Exception("Did you add the firstNumber and secondNumber and assign it to the result variable in AddTwoNumbers? Make sure that you didn't subtract, multiply, or divide in the AddTwoNumbers function.");
             }
 
             try
@@ -35,7 +35,7 @@ namespace BasicArithmeticTests
             }
             catch
             {
-                Console.WriteLine("Did you add firstNumber and secondNumber and assign it to the result variable in the AddTwoNumbers function? Make sure that you use both the firstNumber and the secondNumber variables.");
+                throw new Exception("Did you add firstNumber and secondNumber and assign it to the result variable in the AddTwoNumbers function? Make sure that you use both the firstNumber and the secondNumber variables.");
             }
 
             try
@@ -48,7 +48,7 @@ namespace BasicArithmeticTests
             }
             catch
             {
-                Console.WriteLine("Did you subtract the secondNumber from the firstNumber and assign it to the result variable in SubtractSecondNumberFromFirstNumber? Make sure that you didn't add, multiply, or divide in the SubtractSecondNumberFromFirstNumber function.");
+                throw new Exception("Did you subtract the secondNumber from the firstNumber and assign it to the result variable in SubtractSecondNumberFromFirstNumber? Make sure that you didn't add, multiply, or divide in the SubtractSecondNumberFromFirstNumber function.");
             }
 
             try
@@ -57,7 +57,7 @@ namespace BasicArithmeticTests
             }
             catch
             {
-                Console.WriteLine("Did you subtract the secondNumber from the firstNumber and assign it to the result variable in SubtractSecondNumberFromFirstNumber? Make sure that you use both the firstNumber and the secondNumber variables.");
+                throw new Exception("Did you subtract the secondNumber from the firstNumber and assign it to the result variable in SubtractSecondNumberFromFirstNumber? Make sure that you use both the firstNumber and the secondNumber variables.");
             }
 
             try
@@ -69,7 +69,7 @@ namespace BasicArithmeticTests
             }
             catch
             {
-                Console.WriteLine("Did you divide the secondNumber from the firstNumber and assign it to the result variable in DivideFirstNumberBySecondNumber? Make sure that you didn't add, subtract, or multiply in the DivideFirstNumberBySecondNumber function.");
+                throw new Exception("Did you divide the secondNumber from the firstNumber and assign it to the result variable in DivideFirstNumberBySecondNumber? Make sure that you didn't add, subtract, or multiply in the DivideFirstNumberBySecondNumber function.");
             }
 
             try
@@ -78,20 +78,20 @@ namespace BasicArithmeticTests
             }
             catch
             {
-                Console.WriteLine("Did you divide the secondNumber from the firstNumber and assign it to the result variable in DivideFirstNumberBySecondNumber? Make sure that you use both the firstNumber and the secondNumber variables.");
+                throw new Exception("Did you divide the secondNumber from the firstNumber and assign it to the result variable in DivideFirstNumberBySecondNumber? Make sure that you use both the firstNumber and the secondNumber variables.");
             }
 
             try
             {
-                Assert.NotEqual(50 + 200, addition1);
-                Assert.NotEqual(200 / 50, addition1);
-                Assert.NotEqual(50 / 200, addition1);
-                Assert.NotEqual(50 - 200, addition1);
-                Assert.NotEqual(200 - 50, addition1);
+                Assert.NotEqual(50 + 200, multiplication1);
+                Assert.NotEqual(200 / 50, multiplication1);
+                Assert.NotEqual(50 / 200, multiplication1);
+                Assert.NotEqual(50 - 200, multiplication1);
+                Assert.NotEqual(200 - 50, multiplication1);
             }
             catch
             {
-                Console.WriteLine("Did you multiply the firstNumber and secondNumber and assign it to the result variable in MultiplyTwoNumbers? Make sure that you didn't subtract, multiply, or divide in the MultiplyTwoNumbers function.");
+                throw new Exception("Did you multiply the firstNumber and secondNumber and assign it to the result variable in MultiplyTwoNumbers? Make sure that you didn't subtract, multiply, or divide in the MultiplyTwoNumbers function.");
             }
 
             try
@@ -100,7 +100,7 @@ namespace BasicArithmeticTests
             }
             catch
             {
-                Console.WriteLine("Did you multiply firstNumber and secondNumber and assign it to the result variable in the MultiplyTwoNumbers function? Make sure that you use both the firstNumber and the secondNumber variables.");
+                throw new Exception("Did you multiply firstNumber and secondNumber and assign it to the result variable in the MultiplyTwoNumbers function? Make sure that you use both the firstNumber and the secondNumber variables.");
             }
         }
     }
