@@ -96,7 +96,7 @@ namespace BasicArithmeticTests
 
             try
             {
-                Assert.Equal(250, addition1);
+                Assert.Equal(50*200, multiplication1);
             }
             catch
             {
