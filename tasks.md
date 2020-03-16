@@ -8,7 +8,7 @@ To test this module locally:
 * In Test Explorer click the double right arrow to run all tests.
 
 ## Task 1: Addition
-In the Arithmetic.cs file, in the AddTwoNumbers function, add firstNumber and secondNumber and assign the result to a variable.
+In the Arithmetic.cs file, in the AddTwoNumbers function, add firstNumber and secondNumber and assign the value to the result variable.
 Make sure to use the + operator to add the two numbers i.e. result = variable1 + variable2;
 
 ## Task 2: Subtraction
